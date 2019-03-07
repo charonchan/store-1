@@ -75,8 +75,14 @@ body {
   padding: 1.5rem;
 }
 
+.all-products {
+  display: grid;
+  grid-gap: 1em;
+}
+
 .product {
   border: 3px solid black;
+  margin: 0;
 }
 
 .product-image {
