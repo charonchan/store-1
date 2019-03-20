@@ -87,9 +87,24 @@ body {
 }
 
 .all-products {
+  overflow: hidden;
   display: grid;
   grid-gap: 1em;
+  grid-template-columns: 1fr;
 }
+
+@media screen and (min-width:650px) {
+  .all-products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .all-products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 
 .product {
   border: 3px solid black;
